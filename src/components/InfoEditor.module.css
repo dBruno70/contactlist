@@ -1,0 +1,83 @@
+.mainWindow {
+	width: 70%;
+	position: fixed;
+	top: 15%;
+	left: 15%;
+	box-sizing: border-box;
+	border: 1px solid black;
+	display: flex;
+	z-index: 2;
+	background: white;
+	flex-direction: column;
+	justify-content: center;
+	gap: 5px;
+	animation-name: none;
+	animation-duration: 0.2s;
+}
+
+.mainWindow button {
+	min-width: 5em;
+	height: 2em;
+}
+
+.headerBar {
+	display: flex;
+	height: 2em;
+	align-items: center;
+	justify-content: center;
+	background: #f33;
+	color: white;
+	text-shadow: 1px 1px 1px black;
+}
+
+.saveButtons {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	gap: 5px;
+	margin: 5px 0;
+}
+
+.editorContainer {
+	display: flex;
+	justify-content: center;	
+}
+
+.editorElement {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 2px;
+}
+
+.editorElement input {
+	width: 70%
+}
+
+.deleteText {
+	background: #faa;
+	width: 75%;
+	padding: 5px 0px;
+	margin: 5px auto;
+}
+
+.deleteText button:hover {
+	background: #f55;
+	color: white;
+}
+
+@media screen and (max-width: 800px) {
+  .mainWindow {
+    width: 90%;
+    left: 5%;
+    animation-duration: 0s;
+  }
+  .editorContainer {
+  	flex-direction: column;
+  }
+}
+
+@keyframes windowAnim {
+	from {top: 0%;}
+}
+

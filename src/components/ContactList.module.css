@@ -1,0 +1,28 @@
+.mainList {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5em;
+	animation-name: none;
+	animation-duration: 0.5s;
+	
+}
+.listItem {
+	margin: 0 1%;
+	display: flex;
+	align-items: center;
+	gap: 0.5em;
+}
+
+.telText {
+	font-weight: lighter;
+	font-size: 0.8em;
+}
+
+img {
+	border: 1px solid black;
+	border-radius: 10px;
+}
+
+@keyframes listAnim {
+	from {opacity: 0; transform: translate(-100%);}
+}

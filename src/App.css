@@ -1,0 +1,34 @@
+.App {
+	display: flex;
+	flex-direction: column;
+  text-align: center;
+  gap: 1vh;
+}
+
+button {
+	cursor: pointer;
+	background: white;
+	border: 1px solid black;
+	box-shadow: 1px 1px 1px black;
+	transition: .2s;
+}
+
+button:hover,.submitBtn:hover {
+	background: #faa;
+}
+
+.darkenBG {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: black;
+	opacity: 0.3;
+	z-index: 1;
+	animation-name: none;
+	animation-duration: 0.2s;
+}
+
+@keyframes darkAnim {
+	from {opacity: 0;}
+	to {opacity: 0.3;}
+}
